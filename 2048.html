@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    <link rel="stylesheet" href="2048.css">
+    <script src="2048.js"></script>
+
+    <style>
+        /* Profile button styles */
+ .profile-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.profile-button img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Adjust the position for mobile responsiveness */
+@media (max-width: 768px) {
+    .profile-button {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+/* Leaderboard button styles */
+.leaderboard-button {
+    position: absolute;
+    top: 20px;
+    left: 20px; /* Positioned in the top left */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10; /* Ensure it's on top */
+}
+
+.leaderboard-button img {
+    width: 50px;  /* Increase width */
+    height: 50px; /* Increase height */
+}
+
+/* Adjust the position for mobile responsiveness */
+@media (max-width: 748px) {
+    .profile-button {
+        top: 10px;
+        right: 10px;
+    }
+    .leaderboard-button {
+        top: 10px;
+        left: 10px; /* Adjust for mobile */
+    }
+}
+
+.instructions-button{
+    padding: 10px 25px; /* Increased padding for a better touch target */
+    font-size: 16px; /* Slightly larger font size */
+    margin: 10px 5px; /* Increased margin for spacing */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    border: none; /* No border for a clean look */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #007BFF; /* Primary blue color */
+    color: white; /* White text for contrast */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+}
+</style>
+</head>
+<body>
+    <h1>2048</h1>
+    <hr>
+    <h3>Score: <span id="score">0</span></h3>
+    
+
+
+
+    <div id="board"></div>
+
+
+    <button id="restartButton" class="restart-button" onclick="resetGame()">Restart</button><br>
+    <button id="instructionButton" class="instructions-button" onclick="window.location.href='instructions.html'">Instruction</button>
+    
+    
+</body>
+</html>

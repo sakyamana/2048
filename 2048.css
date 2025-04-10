@@ -1,0 +1,127 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+hr {
+    width: 500px;
+}
+
+.instructions ul li{
+    list-style: none;
+}
+
+#board {
+    width: 400px;
+    height: 400px;
+
+    background-color: #babac0; /* Initial gray background */
+    border: 2px solid #0d1d45;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 90px;
+    height: 90px;
+    border: 5px solid #072655;
+
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restart-button, .instruction-button{
+    padding: 10px 25px; /* Increased padding for a better touch target */
+    font-size: 16px; /* Slightly larger font size */
+    margin: 10px 5px; /* Increased margin for spacing */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    border: none; /* No border for a clean look */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #007BFF; /* Primary blue color */
+    color: white; /* White text for contrast */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+}
+
+/* Hover effect */
+.restart-button:hover, .instructionButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active effect */
+.restart-button:active, .instructionButton:active {
+    background-color: #004494; /* Even darker blue when pressed */
+    transform: translateY(0); /* Reset the lift effect */
+}
+
+/* Disabled state */
+.restart-button:disabled, .instructionButton:disabled {
+    background-color: #cccccc; /* Gray background for disabled */
+    color: #666666; /* Dark gray text */
+    cursor: not-allowed; /* Change cursor to indicate disabled state */
+}
+
+
+
+/* colored tiles - shades of midnight blue */
+
+.x2 {
+    background-color: #a6bddb; /* Lightest shade of blue */
+    color: white;
+}
+
+.x4 {
+    background-color: #739dbb;
+    color: white;
+}
+
+.x8 {
+    background-color: #50799f;
+    color: white;
+}
+
+.x16{
+    background-color: #3e5f88;
+    color: white;
+}
+
+.x32{
+    background-color: #2e4a6c;
+    color: white;
+}
+
+.x64{
+    background-color: #243959;
+    color: white;
+}
+
+.x128{
+    background-color: #1b2d47;
+    color: white;
+}
+
+.x256{
+    background-color: #142236;
+    color: white;
+}
+
+.x512{
+    background-color: #101b2d;
+    color: white;
+}
+
+.x1024{
+    background-color: #0b1525;
+    color: white;
+}
+
+.x2048{
+    background-color: #050e19; /* Darkest shade, close to pure midnight blue */
+    color: white;
+}
